@@ -269,13 +269,137 @@ footer {
 }
 
 
+/*  max 1440px */
+@media (max-width: 1440px) {
+    .container1 {
+        padding: 30px;
+        background-image: url("images/bg-hero-mobile.svg");
+    }
+
+    nav {
+        align-items: center;
+        gap: 20px;
+    }
+
+    .logo {
+        width: 250px;
+        align-items: center;
+    }
+
+    .class1 {
+        text-align: center;
+    }
+
+    .left h1 {
+        font-size: 2em;
+    }
+
+    .get-btn {
+        width: 75%;
+        display: inline-block;
+    }
 
 
+    .feature {
+        padding: 40px 30px;
+    }
 
-/* -------------------- RESPONSIVE -------------------- */
+    .feature-text {
+        text-align: center;
+        max-width: 100%;
+    }
 
-/* TABLETTE max 768px */
-@media (max-width: 768px) {
+    .feature-text h2 {
+        font-size: 1.7em;
+    }
+
+    .cta h2 {
+        font-size: 1.5em;
+    }
+
+}
+
+
+/* =================== RESPONSIVE FOOTER 1440px =================== */
+@media (max-width: 1440px) {
+
+    footer {
+        padding: 60px 20px;
+        width: 100%;
+        
+    }
+
+    .footer-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* ---------- LOGO CORRIGÉ ---------- */
+    .footer-logo img {
+        width: 200px;    
+        height: 15rem;
+        filter: brightness(0) invert(1);
+        margin-top: 30px;
+    }
+    .footer-logo {
+        position: relative;
+        left: 15rem;
+        
+    }
+
+    /* ---------- INFORMATIONS ---------- */
+    .footer-info {
+        width: 110%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        position: relative;
+        left: 12rem;
+        top: 1rem;
+    }
+
+    .footer-info p {
+        font-size: 15px;
+        max-width: 80%;
+        justify-content: center;
+    }
+
+    /* ---------- LIENS ---------- */
+    .footer-links {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        margin-top: 2rem;
+
+    }
+
+    .footer-links a {
+        font-size: 20px;
+    }
+
+    /* ---------- ICONES SOCIALES ---------- */
+    .footer-cerle {
+        display: flex;
+        gap: 15px;
+        position: relative;
+        left: 13rem;
+        top: -7rem;
+    }
+
+    /* ---------- COPYRIGHT EN BAS ---------- */
+    .copyright {
+        font-size: 0.9em;
+        margin-top: 20rem;
+       position: relative;
+       right: 12rem;
+    }
+}
+
+@media (max-width: 1024px) {
     .global {
         overflow: hidden;
     }
@@ -285,6 +409,129 @@ footer {
     }
 
     nav {
+        align-items: center;
+        gap: 20px;
+    }
+
+    .logo {
+        width: 250px;
+        align-items: center;
+    }
+
+
+    .left h1 {
+        font-size: 2em;
+    }
+
+    .get-btn {
+        width: 75%;
+        display: inline-block;
+    }
+
+
+    .feature {
+        padding: 40px 30px;
+    }
+
+    .feature-text {
+        width: 70%;
+    }
+
+
+    .cta h2 {
+        font-size: 1.5em;
+    }
+
+}
+
+
+/* =================== RESPONSIVE FOOTER 1024px =================== */
+@media (max-width: 1024px) {
+
+    footer {
+       height: 20%;
+        width: 100%;
+        
+    }
+
+    .footer-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* ---------- LOGO CORRIGÉ ---------- */
+    .footer-logo img {
+        width: 140px;    
+        height: 20rem;
+        filter: brightness(0) invert(1);
+        margin-top: 30px;
+    }
+    .footer-logo {
+        position: relative;
+        left: 23rem;
+        
+    }
+
+    /* ---------- INFORMATIONS ---------- */
+    .footer-info {
+        position: relative;
+        left: 19rem;
+        top: -1rem;
+    }
+
+    .footer-info p {
+        font-size: 15px;
+    }
+
+    /* ---------- LIENS ---------- */
+    .footer-links {
+       
+        position: relative;
+        left: 15rem;
+        top: -2rem;
+        align-items: center;
+
+    }
+
+    .footer-links a {
+        font-size: 20px;
+    }
+
+    /* ---------- ICONES SOCIALES ---------- */
+   
+
+    .footer-cerle a {
+        position: relative;
+        right: 20rem;
+        width: 100%;
+        top: 18rem;
+        right: 31em;
+    }
+
+    /* ---------- COPYRIGHT EN BAS ---------- */
+    .copyright {
+        font-size: 0.9em;
+        margin-top: 27rem;
+        top: 2rem;
+       position: relative;
+       right: 20rem;
+    }
+}
+
+/* <!---------- 768px --------> */
+
+/* -------------------- RESPONSIVE -------------------- */
+
+/* TABLETTE max 768px */
+ @media (max-width: 768px) {
+    .container1 {
+        padding: 30px;
+        background-image: url("images/bg-hero-mobile.svg");
+    }
+
+    nav {
+        display: flex;
         flex-direction: column;
         align-items: center;
         gap: 20px;
@@ -345,9 +592,10 @@ footer {
 @media (max-width: 768px) {
 
     footer {
-        height: auto;
-        padding: 60px 20px;
-        
+        padding: 40px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .footer-container {
@@ -356,148 +604,84 @@ footer {
         align-items: center;
         justify-content: center;
         text-align: center;
+        gap: 25px;
+        width: 100%;
+        margin-top: 25px;
     }
 
-    /* ---------- LOGO CORRIGÉ ---------- */
+    /* ---------- LOGO ---------- */
     .footer-logo img {
-        width: 160px;      /* taille normale */
+        width: 140px;
         height: auto;
         filter: brightness(0) invert(1);
-        margin-top: 30px;
-    }
-    .footer-logo {
-        position: relative;
-        left: 5rem;
-        
+        margin-bottom: 10px;
+        margin-left: 70px;
     }
 
-    /* ---------- ANNULATION DES DECALLAGES ---------- */
-    .footer-info p,
-    .footer-links a,
-    .footer-cerle a,
-    .copyright {
-        position: static !important;
-        right: 0 !important;
-        left: 0 !important;
-        top: 0 !important;
+    .footer-logo {
+        position: static !important; /* supprime tout décalage */
     }
 
     /* ---------- INFORMATIONS ---------- */
     .footer-info {
-        width: 100%;
         max-width: 700px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 15px;
+        gap: 10px;
     }
 
     .footer-info p {
-        font-size: 16px;
+        font-size: 15px;
         max-width: 90%;
-        justify-content: center;
     }
 
     /* ---------- LIENS ---------- */
     .footer-links {
-        width: 100%;
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 12px;
         align-items: center;
     }
 
     .footer-links a {
-        font-size: 18px;
+        font-size: 17px;
     }
 
     /* ---------- ICONES SOCIALES ---------- */
     .footer-cerle {
         display: flex;
-        justify-content: center;
         gap: 15px;
+        justify-content: center;
+        margin-right: 320px;
     }
 
-    /* ---------- COPYRIGHT EN BAS ---------- */
+    .footer-cerle a {
+        position: static !important; /* enlève le décalage */
+        margin-top: 100px;
+        
+    }
+
+    /* ---------- COPYRIGHT ---------- */
     .copyright {
-        font-size: 0.9em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        margin-top: 20px;
         width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-left: 350px;
+        margin-top: -100px;
+    }
+
+    .copy {
+        position: static !important; /* enlève les déplacements */
+        font-size: 0.9em;
     }
 }
 
-
-/* TABLETTE max 425px */
 @media (max-width: 425px) {
-    .container1 {
-        padding: 30px;
-        background-image: url("images/bg-hero-mobile.svg");
-    }
-
-    nav {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .logo {
-        width: 250px;
-        align-items: center;
-    }
-
-    .class1 {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .left h1 {
-        font-size: 2em;
-    }
-
-    .get-btn {
-        width: 75%;
-        display: inline-block;
-    }
-
-
-    .feature {
-        flex-direction: column-reverse;
-        text-align: center;
-        padding: 40px 30px;
-    }
-
-    .feature-text {
-        max-width: 100%;
-    }
-
-    .feature-text h2 {
-        font-size: 1.7em;
-    }
-
-
-    .feature-2 {
-        flex-direction: column;
-    }
-
-
-    .feature-3 {
-        flex-direction: column-reverse;
-    }
-
-    .cta h2 {
-        font-size: 1.5em;
-    }
-
     .cta {
         width: 85%;
     }
-
-}
-
-/* =================== RESPONSIVE FOOTER 768px =================== */
-@media (max-width: 425px) {
 
     .global {
         width: 100%;
@@ -515,39 +699,24 @@ footer {
         text-align: center;
         width: 100%;
         gap: 35px;
-        /* margin: 0 auto; */
     }
 
     /* ---------- LOGO CORRIGÉ ---------- */
     .footer-logo img {
-        width: 160px;      /* taille normale */
-        height: auto;
+        width: 120px;      
         filter: brightness(0) invert(1);
     }
     .footer-logo {
-        margin-left: 70%;
+        margin-left: 100%;
         
-    }
-
-    /* ---------- ANNULATION DES DECALLAGES ---------- */
-    .footer-info p,
-    .footer-links a,
-    .footer-cerle a,
-    .copyright {
-        position: static !important;
-        right: 0 !important;
-        left: 0 !important;
-        top: 0 !important;
-    }
+    } 
 
     /* ---------- INFORMATIONS ---------- */
     .footer-info {
         width: 100%;
         max-width: 700px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         gap: 15px;
+        margin-right: 40px;
     }
 
     .footer-info p {
@@ -563,6 +732,7 @@ footer {
         flex-direction: column;
         gap: 15px;
         align-items: center;
+        margin-right: 40px;
     }
 
     .footer-links a {
@@ -571,31 +741,29 @@ footer {
 
     /* ---------- ICONES SOCIALES ---------- */
     .footer-cerle {
-        display: flex;
-        justify-content: center;
         gap: 15px;
+        margin-left: -4rem;
     }
 
     /* ---------- COPYRIGHT EN BAS ---------- */
     .copyright {
-        font-size: 0.9em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        font-size: 0.7em;
         width: 100%;
+        margin-right: -10rem;
     }
 }
 
+
 @media (max-width: 375px) {
     .footer-logo {
-        margin-left: 90%;
+        margin-left: 120%;
         
     }
 }
 
 @media (max-width: 320px) {
     .footer-logo {
-        margin-left: 130%;
+        margin-left: 140%;
         
     }
 }
